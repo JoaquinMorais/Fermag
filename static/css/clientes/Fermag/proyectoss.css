@@ -1,0 +1,237 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap%27');
+
+body{
+    background-color: white ;
+    margin: 0%;
+    font-family: 'Saira', sans-serif;
+}
+.contenido{
+    overflow: hidden;
+}
+.navBar {
+    background-color: #354f62;
+}
+
+.header{
+    width: 100%;
+    height: 475px;
+    display: flex;
+}
+
+.header h1{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    backdrop-filter: blur(4px);
+    margin-top: 0;
+    text-align: center;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.servicioProyecto{
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(
+        to right,
+        rgb(12, 12, 100),
+        rgb(96, 116, 184)
+    );
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicioProyecto p{
+   font-size: 15px;
+   color: white;
+   font-weight: bold;
+   font-style: italic;
+   margin: 0 3px; 
+}
+
+.servicioProyecto a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.proyecto-informacion, .cliente-informacion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}   
+
+.proyecto-informacion h1, .cliente-informacion h1, .descripcion-informacion h1, .ubicacion-informacion h1{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.proyecto-informacion p, .cliente-informacion p, .descripcion-informacion p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.proyecto-informacion li, .descripcion-informacion li{
+    list-style: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(32, 32, 32);
+    margin: 5px;
+}
+
+.informacion hr{
+    height: 300px;
+    justify-self: center;
+    align-self: center;
+}
+
+/* CARROUSEL */
+.slider-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 150px;
+}
+
+
+    
+
+.slider-container img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 550px; 
+    margin-top: 0;
+}
+
+.flechas{
+    opacity: 100%;
+    z-index: 5000;
+}
+
+.swiffy-slider button{
+    opacity: 100%;
+    width: 40px;
+    font-size: 40px;
+}
+
+.descripcion-informacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ubicacion-informacion{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ubicacion-informacion iframe{
+    width: 100%;
+    height: 500px
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px){
+    .informacion{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .proyecto-informacion, .cliente-informacion{
+        width: 100%;
+    }   
+
+    .informacion hr{
+        height: 0;
+        width: 300px;
+    }
+
+    .ubicacion-informacion{
+        height: 600px;
+    }
+
+    .ubicacion-informacion iframe{
+        height: 400px
+    }
+}
+
+@media (max-width: 610px){
+    .servicioProyecto{
+        height: 60px;
+    }
+    
+    .servicioProyecto a{
+       font-size: 12px;
+    }
+}
+
+@media (max-width: 440px){
+    .servicioProyecto{
+        height: 50px;
+    }
+    
+    .servicioProyecto a{
+       font-size: 10px;
+       margin: 0 8px;
+    }
+}
+
+@media (max-width: 365px){
+    .servicioProyecto{
+        height: 35px;
+    }
+    
+    .servicioProyecto a{
+       font-size: 7px;
+       margin: 0 6px;
+    }
+}
+
+@media (max-width: 405px){
+    .servicioProyecto p{
+        font-size: 12px;
+    }
+
+    .ubicacion-informacion{
+        height: 450px;
+    }
+
+    .ubicacion-informacion iframe{
+        height: 300px
+    }
+}

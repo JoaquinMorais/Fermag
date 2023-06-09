@@ -1,0 +1,382 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap%27');
+
+body{
+    background-color: white;
+    margin: 0%;
+    font-family: 'Saira', sans-serif;
+}
+
+/* INICIO */
+.inicio{
+    width: 100%;
+    height: 100vh;
+     background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: 2s slidy infinite alternate;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.inicio-adelante{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 10px;
+}
+
+.inicio-adelante h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.inicio-adelante p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -20px;
+}
+
+/* INFORMACION */
+.informacion{
+    width: 90%;
+    margin: 70px 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacion h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.informacion-division{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.informacion-division hr{
+    width: 300px;
+    margin: 0 10px 0 10px;
+
+}
+
+.informacion-division p{
+    font-size: 18px;
+}
+
+.informacion-division .infinito{
+    font-size: 30px;
+}
+
+.informacion h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10% 0 10%;
+}
+
+/* BLOQUES */
+.bloques{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    margin-top: 100px;
+}
+
+.bloque-div{
+    width: 100%;
+}
+
+.bloque-main h1{
+    text-align: left;
+    margin: 20px 0 0 10px;
+    font-size: 25px;
+}
+
+.servicios a{
+  text-decoration: none;
+  color: white;
+}
+
+.bloque-main hr{
+    text-align: left;
+    margin: 0 0 20px 10px;
+    width: 40px;    
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción de aspecto de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* NOTICIAS */
+.noticias-main{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(https://static.mfah.com/images/main-campus-18.15829485354753099698.jpg?width=1680);*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+    animation: 2s slidy infinite alternate;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.noticias-adelante{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+}
+
+.noticias-adelante-texto{
+    margin: 0 50px 0 50%;
+    text-transform: uppercase;
+}
+
+.noticias-adelante-texto h2{
+    font-size: 35px;
+}
+
+.noticias-adelante-texto p{
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.noticias-adelante-texto button{
+    margin-top: 10px;
+}
+
+/* SERVICIOS */
+
+#servicios-servicios{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+    scroll-padding-bottom: 80px;
+    scroll-padding-left: 80px;
+    scroll-padding-right: 80px;
+    scroll-padding: 80px;
+    scroll-margin-top: 0px;
+    scroll-margin-bottom: 0px;
+    scroll-margin-left: 0px;
+    scroll-margin-right: 0px;
+}
+
+.servicios-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+.servicios-menu{
+    background-color: #ddd;
+    font-size: 35px;
+    font-weight: bold;
+    height: 50vh;
+    width: 50vh;
+}
+
+.menu1{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-adelante{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+/* SERVICIOS-BOTON */
+button {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 0 0;
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
+   /* UBICACION */
+.ubicacion-container{
+    position: relative;
+    padding-bottom: 36.25%; /* Proporción de aspecto de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.ubicacion iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px){
+    .noticias-main{
+        height: 75vh;
+        background-attachment: scroll;
+    }
+    .inicio{
+        background-attachment: scroll;
+    }
+    
+
+    .noticias-adelante-texto{
+        margin: 0 35px 0 35px;
+        text-transform: uppercase;
+    }
+
+    .servicios-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicios-menu{
+        height: 25vh;
+        width: 100%;
+    }
+
+    .menu-adelante p{
+        font-size: 30px;
+    }
+
+    .botones-servicios{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones-servicios a{
+        margin: 0 5px;
+    }
+
+    .informacion h4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .inicio-adelante h1{
+        font-size: 35px;
+    }
+    
+    .inicio-adelante p{
+        font-size: 13px;
+    }
+
+    .noticias-adelante-texto h2{
+        font-size: 25px;
+    }
+    
+    .noticias-adelante-texto p{
+        font-size: 15px;
+    }
+
+    .informacion h4{
+        font-size: 16px;
+    }
+    .menu-adelante p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 386px){
+    .menu-adelante p{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .inicio-adelante h1{
+        font-size: 30px;
+    }
+    
+    .inicio-adelante p{
+        font-size: 11px;
+        .informacion h4{
+            font-size: 14px;
+        }
+    }
+
+    .menu-adelante p{
+        font-size: 20px;
+    }
+}
+
+/* SLIDER */
+
+/* ENDSLIDER */
