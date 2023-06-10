@@ -94,7 +94,7 @@ window.onload = function() {
 // FUNCIONES
 function changeImage(img,name_image,timeout = 0){
   setTimeout(()=>{
-    img.setAttribute("src","static/src/clientes/Fermag/"+name_image);
+    img.setAttribute("src","../../static/src/clientes/Fermag/"+name_image);
   },timeout);
 }
 
@@ -107,8 +107,8 @@ function changeColorLinks(state){
   }
   else{
     links.forEach(link => {
-      link.style.color = 'white';
+      link.style.color = 'black';
     });
-    changeImage(logo,"logoFermagBlanco.webp",100);
+    changeImage(logo,"logoFermagColor.webp",100);
   }
 }

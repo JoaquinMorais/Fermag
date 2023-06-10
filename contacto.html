@@ -1,14 +1,75 @@
-{% extends "clientes/Fermag/baseFermag.html" %}
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.2.2/dist/smooth-scroll.polyfills.min.js"></script>
 
-    {% block head %}
-        <link rel="stylesheet" href="{{ url_for('static',filename='css/clientes/Fermag/contacto.css') }}">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fermag S.A </title>
+    
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/static/css/clientes/Fermag/baseFermag.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- SCROOL REVEAL -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="shortcut icon" type="image/png" href="/static/src/clientes/Fermag/logoFermag.png" />
+    
+    
+        <link rel="stylesheet" href="/static/css/clientes/Fermag/contacto.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- FONT AWESOME -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <title>Fermag S.A.</title>
-    {% endblock %}
+    
+    
+</head>
+<body>
 
-    {% block content %}
+    <!-- LOADER -->
+    <div class="fondo" id="loader-container">
+        <div id="loader" class="loader">
+
+            <div class="cell d-0"></div>
+            <div class="cell d-1"></div>
+            <div class="cell d-2"></div>
+            
+            <div class="cell d-1"></div>
+            <div class="cell d-2"></div>
+            
+            <div class="cell d-2"></div>
+            <div class="cell d-3"></div>
+            
+            <div class="cell d-3"></div>
+            <div class="cell d-4"></div>
+            
+        </div>
+    </div>
+    <!-- FIN LOADER -->
+
+    <nav class="navBar">
+        <div class="logo">
+            <a href="fermag.html"><img src="/static/src/clientes/Fermag/logoFermagBlanco.webp" alt="FERMAG S.A." id="logo"></a>
+        </div>
+
+        <div class="navegacion">   
+            <input type="checkbox" class="toogle-menu">
+            <div class="hamburguer"></div>
+            <ul class="menu" id="menu">
+                <li><a href="fermag.html" class="nav-link">Empresa</a></li>
+                
+                <li><a href="fermag.html" class="nav-link">¿Qué ofrecemos?</a></li>
+                
+                <!--<li><a href="/Fermag/noticias" class="nav-link">Noticias</a></li>-->
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <div class="main">
       <div class="div-contacto">
         <h1>CONTACTANOS!</h1>
@@ -28,43 +89,43 @@
           
                   <button type="submit" class="button-58">ENVIAR</button>
                 </form>
-                <a href="mailto:ventas@fermagsa.com" id="trick"></a>
+                <a href="mailto:info@fermagsa.com" id="trick"></a>
           </div>
           <div class="social-buttons">
               <h2>Siguenos en nuestras redes sociales</h2>
                 <a href="https://www.instagram.com/grupofermag/" class="btn instagram-btn">
-                  <img src="{{url_for('static',filename='src/Icons/instagram.svg')}}" alt="logo">
+                  <img src="/static/src/Icons/instagram.svg" alt="logo">
                   <p>
                     Instagram
                   </p> 
                 </a>
                 <a href="https://www.youtube.com/@grupofermag4162" class="btn youtube-btn">
-                  <img src="{{url_for('static',filename='src/Icons/youtube.svg')}}" alt="logo">
+                  <img src="/static/src/Icons/youtube.svg" alt="logo">
                   <p>
                     Youtube
                   </p> 
                 </a>
                 <a href="https://www.facebook.com/grupofermag" class="btn facebook-btn">
-                  <img src="{{url_for('static',filename='src/Icons/facebook.svg')}}" alt="logo">
+                  <img src="/static/src/Icons/facebook.svg" alt="logo">
                   <p>
                     Facebook
                   </p> 
                 </a>
                 <a href="https://www.google.com/maps?q=Lavalleja++2878,+C%C3%B3rdoba,+Argentina,+C%C3%B3rdoba,+Argentina" class="btn google-maps-btn">
-                  <img src="{{url_for('static',filename='src/Icons/location.svg')}}" alt="logo">
+                  <img src="/static/src/Icons/location.svg" alt="logo">
                   <p>
                     Google Maps
                   </p> 
                 </a>
                 <a href="https://web.whatsapp.com/send?phone=+5493513992068" class="btn whatsapp-btn">
-                  <img src="{{url_for('static',filename='src/Icons/whatsapp.svg')}}" alt="logo">
+                  <img src="/static/src/Icons/whatsapp.svg" alt="logo">
                   <p>
                     Whatsapp
                   </p> 
                 </a>
               
                 <a href="tel:(0351) 4712959" class="btn phone-btn">
-                  <img src="{{url_for('static',filename='src/Icons/phone.svg')}}" alt="logo">
+                  <img src="/static/src/Icons/phone.svg" alt="logo">
                   <p>
                     Telefono
                   </p> 
@@ -93,4 +154,34 @@
         }
       
       </script>
-    {% endblock %}
+    
+    <div class="footer" id="footer">
+        <div class="footer-contactanos">
+            <h2>Contáctanos</h2>
+            <div class="footer-contactanos-botones">
+                <div>
+                    <a href="/Fermag/contacto"><img src="/static/src/Icons/gmail.svg" alt="aas" class="icono""></a>
+                </div>
+                <div>
+                    <a href="https://wa.me/5493513992068/?text=Hola%20buenos%20dias!."><img src="/static/src/Icons/whatsapp.svg" alt="aas" class="icono""></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/grupofermag/"><img src="/static/src/Icons/instagram.svg" alt="aas" class="icono""></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/Fermag/"><img src="/static/src/Icons/facebook.svg" alt="aas" class="icono""></a>
+                </div>
+                <div>
+                    <a href="tel:+5493513992068"><img src="/static/src/Icons/phone.svg" alt="aas" class="icono""></a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Copyright © 2023 | Fermag | </p>
+                <a href="https://teamlussary.com.ar/">Team Lussary</a>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/clientes/Fermag/baseFermag.js"></script>
+</body>
+</html>
