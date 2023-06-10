@@ -120,7 +120,7 @@ body{
 
 .video-container{
     position: relative;
-    padding-bottom: 40.25%; /* Proporción de aspecto de 16:9 */
+    padding-bottom: 56.25%; /* Proporción de aspecto de 16:9 */
     height: 0;
     overflow: hidden;
 }
