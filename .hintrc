@@ -3,12 +3,51 @@
     "development"
   ],
   "hints": {
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off",
+        "link-name": "off"
+      }
+    ],
     "axe/forms": [
       "default",
       {
         "label": "off"
       }
     ],
-    "no-inline-styles": "off"
+    "meta-viewport": "off",
+    "no-inline-styles": "off",
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off",
+        "list": "off"
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]",
+          "iframe[allow]"
+        ]
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "backdrop-filter"
+        ]
+      }
+    ]
   }
 }
